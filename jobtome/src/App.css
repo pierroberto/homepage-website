@@ -1,3 +1,31 @@
 .app {
   text-align: center;
 }
+
+.app__button {
+    height: 50px;
+    width: 150px;
+}
+
+.app__home {
+  max-width: 100%;
+}
+
+.app__label {
+  display: block;
+}
+
+.app__input {
+
+}
+
+.app__inputBox {
+  height: 50px;
+  font-size: 18px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.app__wrapper {
+  display: flex;
+}

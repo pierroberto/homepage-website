@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class Search extends Component {
   render() {
     return (
-      <div className="Search">
+      <div className="search">
         searchbar
       </div>
     );
