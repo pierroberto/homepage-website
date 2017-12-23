@@ -8,9 +8,10 @@ import Search from './components/Search/Search';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Navbar></Navbar>
-        <div className="App__container">
+        <div className="app__container">
+          
           <Search />
         </div>
       </div>

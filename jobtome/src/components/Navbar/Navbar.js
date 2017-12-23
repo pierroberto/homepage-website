@@ -5,9 +5,18 @@ import { connect } from 'react-redux';
 class Navbar extends Component {
   render() {
     return (
-      <div className="Navbar">
-        navbar
-      </div>
+        <header className="navbar">
+          <div className="navbar__left">
+            <img className="navbar__logo" src={require("../../assets/jobtome2.png")} />
+          </div>
+          <div className="navbar__right">
+            <ul className="navbar__list">
+              <li className="navbar__item">For companies</li>
+              <li className="navbar__item">Jobs</li>
+              <li className="navbar__item">Login</li>
+            </ul>
+          </div>
+        </header>
     );
   }
 }
