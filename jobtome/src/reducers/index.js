@@ -1,17 +1,17 @@
 import * as types from '../actions/types';
 
 const defaultState = {
-  saveCompanyInfo: null,
-}
+  dropdown: false,
+};
 
 export default (state = defaultState, action) => {
   switch (action.type) {
-  case types.SAVE_COMPANY_INFO:
-    return {
-      ...state,
-      saveCompanyInfo: action.data,
-    }
-  default:
-    return state;
+    case types.TOGGLE_DROPDOWN:
+      return {
+        ...state,
+        dropdown: !state.dropdown,
+      };
+    default:
+      return state;
   }
-}
+};
