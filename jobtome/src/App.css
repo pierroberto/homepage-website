@@ -2,21 +2,22 @@
   text-align: center;
 }
 
-.app__button {
-    height: 50px;
-    width: 150px;
-}
-
 .app__home {
+  position: absolute;
+  left: 0;
+  top: 50px;
   max-width: 100%;
+  z-index: -1;
 }
 
 .app__label {
   display: block;
+  color: #000;
+  text-align: left;
+  margin: 5px 20px;
 }
 
 .app__input {
-
 }
 
 .app__inputBox {
@@ -26,6 +27,42 @@
   margin-left: 20px;
 }
 
+.app__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0;
+}
+
 .app__wrapper {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.app__form {
+  position: relative;
+  left: 10%;
+  bottom: -50%;
+  transform: translateY(-50%);
+}
+
+.list-company {
+  background-color: #fff;
+}
+
+@media screen and (max-width:768px) {
+
+
+}
+
+@media screen and (max-width:480px) {
+  .app__inputBox {
+    /*height: 20px;*/
+  }
+  .app__intro {
+    margin: 0;
+  }
+  .list-company {
+    margin-top: 0;
+  }
 }

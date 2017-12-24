@@ -1,0 +1,19 @@
+.item-view {
+  margin: 10px;
+}
+
+.item-view__button-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-view__wrapper {
+  display: block;
+  max-width: 600px;
+}
+
+.item-view__pic {
+  max-width: 100%;
+}

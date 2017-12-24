@@ -1,5 +1,5 @@
 .navbar {
-  /*background-color: blue;*/
+  margin: 0 20px;
 }
 .navbar__left {
   display: inline-block;
@@ -7,7 +7,6 @@
   width: 25%;
   margin-right: 5%;
   text-align: left;
-
 }
 
 .navbar__right {
@@ -32,6 +31,6 @@
 
 .navbar__logo {
   padding-left: 20px;
-  vertical-align:middle;
+  vertical-align: middle;
   width: 100px;
 }
