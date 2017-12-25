@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import ListView from './components/ListView/ListView';
 import Search from './components/Search/Search';
 import RaisedButton from 'material-ui/RaisedButton';
+import FontAwesome from 'react-fontawesome';
 
 class App extends Component {
   render() {
@@ -21,15 +22,15 @@ class App extends Component {
               <div className="app__wrapper">
                 <div className="app__wrapper">
                   <div className="app__input">
-                    <input className="app__inputBox" type="text" placeholder="city..." />
-                    <label className="app__label">Title, Skill, Sector</label>
+                    <input className="app__inputBox" type="text" placeholder="Città..." />
+                    <label className="app__label">Cerca per città</label>
                   </div>
 
                   <div className="app__input">
                     <div className="app__wrapper">
                       <div className="app__input">
-                        <input className="app__inputBox" type="text" placeholder="title..." />
-                        <label className="app__label">City</label>
+                        <input className="app__inputBox" type="text" placeholder="Cerca..." />
+                        <label className="app__label">Tiolo, settore, azienda</label>
                       </div>
                       <div className="app__input">
                         <RaisedButton primary style={{ height: 50, marginLeft: 20 }} label="Vai" />
@@ -50,8 +51,8 @@ class App extends Component {
             <button className="app__button">La tua azienda qui</button>
           </div>
         </section>
-        <div className="row">
-          <footer className="footer">
+        <footer className="footer">
+          <div className="row">
             <div className="footer__container">
               <div className="footer__box">
                 <div className="footer__topic">
@@ -60,37 +61,63 @@ class App extends Component {
                     <li className="footer__item">Tutte le aziende</li>
                     <li className="footer__item">Cerca lavoro</li>
                   </ul>
-                  <div className="footer__topic">
-                    <ul>
-                      <h3>Sei un'azienda?</h3>
-                      <li>Come funziona</li>
-                    </ul>
-                  </div>
+                </div>
+                <div className="footer__topic">
+                  <h3 className="footer__title">Sei un'azienda?</h3>
+                  <ul className="footer__list">
+                    <li className="footer__item">Come funziona</li>
+                  </ul>
                 </div>
               </div>
               <div className="footer__box">
-                <h3>Jobtome</h3>
-                <ul>
-                  <li>Chi siamo</li>
-                  <li>Lavora con noi</li>
-                  <li>Cookie Policy</li>
-                  <li>Sitemap</li>
-                  <li>Blog</li>
+                <h3 className="footer__title">Jobtome</h3>
+                <ul className="footer__list">
+                  <li className="footer__item">Chi siamo</li>
+                  <li className="footer__item">Lavora con noi</li>
+                  <li className="footer__item">Cookie Policy</li>
+                  <li className="footer__item">Sitemap</li>
+                  <li className="footer__item">Blog</li>
                 </ul>
               </div>
               <div className="footer__box">
-                <h3>Contatti</h3>
-                <ul>
-                  <li>Indirizzo</li>
-                  <li>Numero</li>
+                <h3 className="footer__title">Contatti</h3>
+                <ul className="footer__list">
+                  <li className="footer__item">Indirizzo</li>
+                  <li className="footer__item">Numero</li>
                 </ul>
               </div>
               <div className="footer__box">
-                <div className="footer__topic" />
+                <div className="footer__topic">
+                  <h3 className="footer__title">Jobtome sui social</h3>
+                  <div className="footer__social-Fb footer__social">
+                    <div className="footer__socialText">Accedi con Facebook</div>
+                  </div>
+                  <div className="footer__social-Li footer__social">
+                    <div className="footer__socialText">Accedi con Linkedin</div>
+                  </div>
+                  <div className="footer__social-Go footer__social">
+                    <div className="footer__socialText">Accedi con Google</div>
+                  </div>
+                </div>
               </div>
             </div>
-          </footer>
-        </div>
+          </div>
+          <div className="footer-nobackground">
+            <div className="row">
+              <div className="footer__container footer__container-nobackground">
+                <div className="footer__topic">© 2017 Jobtome</div>
+                <div className="footer__topic">
+                  <FontAwesome className="footer__icons" name="facebook" />
+                  <FontAwesome className="footer__icons" name="twitter" />
+                  <FontAwesome className="footer__icons" name="linkedin" />
+                  <FontAwesome className="footer__icons" name="youtube" />
+                  <FontAwesome className="footer__icons" name="instagram" />
+                  <FontAwesome className="footer__icons" name="pinterest" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }
