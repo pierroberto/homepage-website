@@ -17,12 +17,29 @@
 
 .app__button {
   background-color: #fff;
-  padding: 15px 40px;
+  padding: 25px 40px;
   color: #1d3b55;
   border: 3px solid #1d3b55;
   font-family: 'Roboto';
   font-size: 20px;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.app__button2 {
+  display: flex;
+  background-color: #ced6d8;
+  color: #1d3b55;
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__button2:hover {
+  background-color: #ebeeef;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
 
 .app__button:hover {
@@ -38,25 +55,24 @@
 .app__container {
 }
 
-.app__home {
-  position: absolute;
-  -ms-transform: translateY(-80%);
-  -webkit-transform: translateY(-80%);
-  -moz-transform: translateY(-80%);
-  -o-transform: translateY(-80%);
-  transform: translateY(-80%);
-  left: 0;
-  margin: 0;
-  max-width: 100%;
-  z-index: -1;
+.app__form {
+  position: relative;
+  left: 10%;
+  bottom: -50%;
+  transform: translateY(-50%);
 }
 
-.app__label {
-  display: block;
-  color: #000;
-  text-align: left;
-  margin-top: 5px;
-  margin-bottom: 20px;
+.app__home {
+  position: absolute;
+  -ms-transform: translateY(-90%);
+  -webkit-transform: translateY(-90%);
+  -moz-transform: translateY(-90%);
+  -o-transform: translateY(-90%);
+  transform: translateY(-90%);
+  left: 0;
+  margin: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .app__input {
@@ -76,6 +92,14 @@
   margin: 10% 0;
 }
 
+.app__label {
+  display: block;
+  color: #000;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
 .app__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -88,16 +112,12 @@
   flex-wrap: wrap;
 }
 
-.app__form {
-  position: relative;
-  left: 10%;
-  bottom: -50%;
-  transform: translateY(-50%);
-}
-
 .app__companyList {
   background-color: #fff;
-  padding: 10px 0;
+  padding: 30px 0;
+}
+
+.app__textButton {
 }
 
 .app__title {
@@ -108,6 +128,12 @@
   background-color: #1d3b55;
   color: #fff;
   margin-top: 50px;
+}
+
+.footer__box {
+  display: flex;
+  margin: 20px 20px;
+  flex-direction: column;
 }
 
 .footer__container {
@@ -124,13 +150,11 @@
   background-color: #fff;
   color: #000;
   margin: 0;
-  padding: 10px 20px;
+  padding: 30px 20px;
 }
 
-.footer__box {
-  display: flex;
-  margin: 20px 20px;
-  flex-direction: column;
+.footer__copyright {
+  font-size: 12px;
 }
 
 .footer__icons {
@@ -159,6 +183,10 @@
   margin-top: 5px;
 }
 
+.footer__social:hover {
+  opacity: 0.8;
+}
+
 .footer__social-Fb {
   background-color: #6b9de0;
 }
@@ -174,62 +202,32 @@
 .footer__socialText {
   flex-grow: 2;
   padding: 15px 60px;
+  cursor: pointer;
 }
-
-/*.footer__socialPic {
-  display: flex;
-  flex-grow: 1;
-  padding: 15px 30px;
-}*/
 
 .footer__title {
   display: flex;
   color: #fff;
 }
 
-.footer__topic {
-}
-
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 480px) {
-  .app__intro {
-    margin: 0;
-  }
-  .list-company {
-    margin-top: 0;
-  }
-
+@media screen and (max-width: 645px) {
   .app__box {
     position: relative;
-    /*left: 50%;*/
     z-index: 1;
     background-color: #fff;
     opacity: 0.95;
     margin: 0 10px;
     padding: 5px;
-    -webkit-box-shadow: 21px 17px 29px -19px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 21px 17px 29px -19px rgba(0, 0, 0, 0.75);
-    box-shadow: 21px 17px 29px -19px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
   }
 
   .app__home {
-    position: absolute;
-    -ms-transform: translateY(-90%);
-    -webkit-transform: translateY(-90%);
-    -moz-transform: translateY(-90%);
-    -o-transform: translateY(-90%);
-    transform: translateY(-78%);
-    left: 0;
-    margin: 0;
-    max-width: 100%;
-    z-index: -1;
+    display: none;
   }
 
   .app__inputBox {
     height: 30px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 18px;
     padding-left: 20px;
@@ -238,11 +236,58 @@
   }
 
   .app__label {
-    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app__intro {
+  }
+
+  .app__companyList {
+    padding-top: 0;
+  }
+
+  .list-company {
+    margin-top: 0;
+  }
+
+  .app__box {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    opacity: 0.95;
+    margin: 0 10px;
+    padding: 5px;
+    -webkit-box-shadow: 21px 17px 29px -19px rgba(29, 59, 85, 1);
+    -moz-box-shadow: 21px 17px 29px -19px rgba(29, 59, 85, 1);
+    box-shadow: 21px 17px 29px -19px rgba(29, 59, 85, 1);
+    border-radius: 5px;
+  }
+
+  .app__home {
+    display: none;
+  }
+
+  .app__input {
+  }
+
+  .app__inputBox {
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-left: 20px;
+    width: 87%;
+  }
+
+  .app__label {
+    display: none;
   }
 
   .app__title {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
   }
 }

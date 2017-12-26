@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { dropdown } from '../../actions/index';
 import Divider from 'material-ui/Divider';
 import FontAwesome from 'react-fontawesome';
-// const FontAwesome = require('react-fontawesome');
 
 class Navbar extends Component {
   render() {
@@ -23,20 +22,32 @@ class Navbar extends Component {
           />
 
           <ul className="navbar__list">
-            <li className="navbar__item">Aziende</li>
-            <li className="navbar__item">Jobs</li>
-            <li className="navbar__item">Login</li>
+            <li className="navbar__item">
+              <a href="#">Aziende</a>
+            </li>
+            <li className="navbar__item">
+              <a href="#">Jobs</a>
+            </li>
+            <li className="navbar__item">
+              <a href="#">Login</a>
+            </li>
           </ul>
 
           <div
             className={this.props.dropdown ? 'navbar__dropdown-show' : 'navbar__dropdown-hidden'}
           >
             <ul className="navbar__dropdownList">
-              <li className="navbar__dropdownItem">For companies</li>
+              <li className="navbar__dropdownItem">
+                <a href="#">Aziende</a>
+              </li>
               <Divider />
-              <li className="navbar__dropdownItem">Jobs</li>
+              <li className="navbar__dropdownItem">
+                <a href="#">Jobs</a>
+              </li>
               <Divider />
-              <li className="navbar__dropdownItem">Login</li>
+              <li className="navbar__dropdownItem">
+                <a href="#">Login</a>
+              </li>
             </ul>
           </div>
         </div>
