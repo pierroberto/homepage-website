@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-
 import Navbar from './components/Navbar/Navbar';
 import ListView from './components/ListView/ListView';
-import Search from './components/Search/Search';
 import RaisedButton from 'material-ui/RaisedButton';
 import FontAwesome from 'react-fontawesome';
 import WOW from 'wowjs';
@@ -43,9 +41,6 @@ class App extends Component {
                       </div>
                       <div className="app__input app__wrapper">
                         <RaisedButton label="vai" style={{ height: 50 }} />
-                        {/* <div className="app__button2">
-                          <div className="app__textButton">Vai</div>
-                        </div> */}
                       </div>
                     </div>
                   </div>

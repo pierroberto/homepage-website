@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.5.2",
-    "aos": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",

@@ -47,7 +47,6 @@
 .navbar__left {
   display: inline-block;
   vertical-align: middle;
-  /*background-color: lime;*/
   width: 25%;
   margin-right: 5%;
   text-align: left;
@@ -55,7 +54,6 @@
 
 .navbar__right {
   display: inline-block;
-  /*background-color: red;*/
   width: 65%;
   margin-left: 5%;
   text-align: right;
